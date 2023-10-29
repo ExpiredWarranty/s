@@ -82,7 +82,7 @@ prefixFormat: '&7[&6BetterTeams&7] '
 # - Keep this value reasonable, as Java cannot cope with larger numbers (over 2 billion), so if you want the team to be limitless, set the value to -1 instead of something large
 #
 # Possible values: [-1, any positive whole number]
-allyLimit: 5
+allyLimit: 1
 
 # This is used to limit the length of a team name (if chat prefixes are enabled, this will stop the team names clogging up the chat)
 # - If this feature is unwanted, set the teamLimit to -1 and team name lengths will be unlimited
@@ -134,7 +134,7 @@ blacklist:
 # This is a list of characters wich will not be allowed in team names or tags
 #
 # Possible values: [Any characters]
-bannedChars: ',.!"�$%^&*()[]{};:#~\|`�'
+bannedChars: ',.!"�$%^&*(){};:#~\|`�'
 
 # This is a list of all characters to be allowed in team names or tags
 # - If this is left blank, all characters (except those in bannedChars or color codes) will be allowed in team name
@@ -209,7 +209,7 @@ tpDelay: 0
 # - If this is false, the player can move around however they want while waiting for the teleport
 # 
 # Possible values: [true, false]
-noMove: false
+noMove: true
 
 # this is used if noMove is set to true. this is the distance the player can travel while not being classed as moving
 # - If this is set to 0 the player cannot move 
@@ -276,7 +276,7 @@ levels:
       # - If this is set to -1 there will be no limit on the number of chests
       # 
       # Possible values: [Any positive whole number, 0, -1]
-      maxChests: 2
+      maxChests: 3
       # This is used to determine the maximum number of warps that a team can set 
       # - If this is set to 0 teams will not be allowed any warps (though it is recommended you do that through permissions instead of the config option) 
       # - If this is set to -1 there will be no limit on the number of warps
